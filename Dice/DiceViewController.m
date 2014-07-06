@@ -7,6 +7,7 @@
 //
 
 #import "DiceViewController.h"
+#import "DiceView.h"
 
 @interface DiceViewController ()
 
@@ -27,6 +28,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [(DiceView *)[self view] setFlag:0];
+    [(DiceView *)[self view] updateBox:0];
+    [(DiceView *)[self view] updateDice:@[
+        @1, @2, @3, @4, @5]];
+    
+    
+    CGRect desktopFrame = [(DiceView *)[self view] desktopView].frame;
+    desktopFrame.origin.y = self.view.frame.size.height - desktopFrame.size.height;
+    [[(DiceView *)[self view] desktopView] setFrame:desktopFrame];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
