@@ -21,95 +21,67 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop.png" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-rL-MLW">
                     <rect key="frame" x="0.0" y="349" width="320" height="219"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="219" id="1kz-bp-itT"/>
-                        <constraint firstAttribute="width" constant="320" id="SNz-D2-ty5"/>
-                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicebox-back-22.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ejk-Hu-wFH">
-                    <rect key="frame" x="31" y="366" width="258" height="184"/>
+                    <rect key="frame" x="0.0" y="320" width="320" height="250"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="184" id="Sss-OU-7GI"/>
-                        <constraint firstAttribute="width" constant="258" id="u31-mS-f4X"/>
-                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="u2P-hs-q37">
                     <rect key="frame" x="176" y="420" width="52" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="52" id="62l-Zy-bHy"/>
-                        <constraint firstAttribute="height" constant="59" id="Qre-sd-sTg"/>
-                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="GmX-Xf-MBr">
-                    <rect key="frame" x="130" y="416" width="52" height="59"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="T8o-Oe-gx8">
+                    <rect key="frame" x="134" y="414" width="52" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="59" id="cTV-yQ-seA"/>
-                        <constraint firstAttribute="width" constant="52" id="vcK-Ua-wNf"/>
-                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="cT9-bd-4bU">
                     <rect key="frame" x="83" y="421" width="52" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="52" id="C35-5R-j5y"/>
-                        <constraint firstAttribute="height" constant="59" id="lho-Fo-J9i"/>
-                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="uSN-25-2tz">
                     <rect key="frame" x="106" y="437" width="52" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="59" id="JUA-3N-jhA"/>
-                        <constraint firstAttribute="width" constant="52" id="rUV-Xr-Cvx"/>
-                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0r1-6V-MxA">
                     <rect key="frame" x="152" y="442" width="52" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="52" id="gm5-yc-YSb"/>
-                        <constraint firstAttribute="height" constant="59" id="r2N-Wf-yaR"/>
-                    </constraints>
                 </imageView>
                 <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicebox-22.png" translatesAutoresizingMaskIntoConstraints="NO" id="9ko-Hg-kPu">
-                    <rect key="frame" x="31" y="150" width="258" height="345"/>
+                    <rect key="frame" x="0.0" y="86" width="320" height="480"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="GmX-Xf-MBr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="130" id="41W-nQ-o1L"/>
-                <constraint firstItem="u2P-hs-q37" firstAttribute="leading" secondItem="uSN-25-2tz" secondAttribute="trailing" constant="18" id="6h6-fh-8Ng"/>
-                <constraint firstAttribute="bottom" secondItem="vPT-rL-MLW" secondAttribute="bottom" id="Ngp-wH-mS1"/>
-                <constraint firstAttribute="trailing" secondItem="u2P-hs-q37" secondAttribute="trailing" constant="92" id="PID-Ae-Gid"/>
-                <constraint firstItem="vPT-rL-MLW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RXK-Bq-ovL"/>
-                <constraint firstAttribute="bottom" secondItem="Ejk-Hu-wFH" secondAttribute="bottom" constant="18" id="Sqz-82-NFk"/>
-                <constraint firstAttribute="trailing" secondItem="Ejk-Hu-wFH" secondAttribute="trailing" constant="31" id="XTI-Fs-Snc"/>
-                <constraint firstAttribute="bottom" secondItem="0r1-6V-MxA" secondAttribute="bottom" constant="67" id="ZuL-E2-jZb"/>
-                <constraint firstItem="uSN-25-2tz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="aWj-Us-fsd"/>
-                <constraint firstAttribute="bottom" secondItem="9ko-Hg-kPu" secondAttribute="bottom" constant="73" id="dDm-fW-Hzo"/>
-                <constraint firstAttribute="bottom" secondItem="uSN-25-2tz" secondAttribute="bottom" constant="72" id="fnB-OM-1Ge"/>
-                <constraint firstAttribute="bottom" secondItem="u2P-hs-q37" secondAttribute="bottom" constant="89" id="ftP-Om-ncM"/>
-                <constraint firstAttribute="trailing" secondItem="vPT-rL-MLW" secondAttribute="trailing" id="ggs-p1-o5n"/>
-                <constraint firstItem="Ejk-Hu-wFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="kiA-zw-Pzy"/>
-                <constraint firstAttribute="trailing" secondItem="9ko-Hg-kPu" secondAttribute="trailing" constant="31" id="s6n-O4-mh8"/>
-                <constraint firstItem="9ko-Hg-kPu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="u2u-Xy-hE3"/>
-                <constraint firstItem="cT9-bd-4bU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="83" id="vjO-8I-84Y"/>
-                <constraint firstAttribute="bottom" secondItem="cT9-bd-4bU" secondAttribute="bottom" constant="88" id="vpW-si-om8"/>
-                <constraint firstAttribute="bottom" secondItem="GmX-Xf-MBr" secondAttribute="bottom" constant="93" id="vqp-EP-egm"/>
-                <constraint firstAttribute="trailing" secondItem="0r1-6V-MxA" secondAttribute="trailing" constant="116" id="wqV-b5-LCj"/>
-                <constraint firstAttribute="trailing" secondItem="GmX-Xf-MBr" secondAttribute="trailing" constant="138" id="zO5-xd-L5r"/>
-                <constraint firstItem="0r1-6V-MxA" firstAttribute="leading" secondItem="cT9-bd-4bU" secondAttribute="trailing" constant="17" id="zzg-kP-EsK"/>
+                <constraint firstAttribute="trailing" secondItem="0r1-6V-MxA" secondAttribute="trailing" constant="116" id="0Or-Sl-Sd4"/>
+                <constraint firstItem="T8o-Oe-gx8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="134" id="0fS-99-y2Z"/>
+                <constraint firstAttribute="bottom" secondItem="uSN-25-2tz" secondAttribute="bottom" constant="72" id="26q-M0-GKV"/>
+                <constraint firstAttribute="trailing" secondItem="9ko-Hg-kPu" secondAttribute="trailing" id="27z-ha-qKZ"/>
+                <constraint firstAttribute="bottom" secondItem="cT9-bd-4bU" secondAttribute="bottom" constant="88" id="3yA-zk-sla"/>
+                <constraint firstAttribute="bottom" secondItem="0r1-6V-MxA" secondAttribute="bottom" constant="67" id="4dz-bf-GLV"/>
+                <constraint firstAttribute="trailing" secondItem="Ejk-Hu-wFH" secondAttribute="trailing" id="5hS-Sy-Eof"/>
+                <constraint firstAttribute="bottom" secondItem="Ejk-Hu-wFH" secondAttribute="bottom" constant="-2" id="8yg-Ds-JU8"/>
+                <constraint firstAttribute="bottom" secondItem="9ko-Hg-kPu" secondAttribute="bottom" constant="2" id="Hwz-B1-GBl"/>
+                <constraint firstItem="Ejk-Hu-wFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAf-Nq-EsG"/>
+                <constraint firstItem="vPT-rL-MLW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OKR-oA-SJ0"/>
+                <constraint firstAttribute="trailing" secondItem="u2P-hs-q37" secondAttribute="trailing" constant="92" id="PG8-Af-I3p"/>
+                <constraint firstAttribute="trailing" secondItem="vPT-rL-MLW" secondAttribute="trailing" id="Ra5-vt-uve"/>
+                <constraint firstItem="0r1-6V-MxA" firstAttribute="leading" secondItem="cT9-bd-4bU" secondAttribute="trailing" constant="17" id="SIT-k9-eGF"/>
+                <constraint firstAttribute="bottom" secondItem="vPT-rL-MLW" secondAttribute="bottom" id="Shm-4r-wRv"/>
+                <constraint firstAttribute="bottom" secondItem="T8o-Oe-gx8" secondAttribute="bottom" constant="95" id="Ztq-AH-cOf"/>
+                <constraint firstItem="cT9-bd-4bU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="83" id="cbt-hV-F5U"/>
+                <constraint firstItem="9ko-Hg-kPu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzX-h9-QeS"/>
+                <constraint firstAttribute="trailing" secondItem="T8o-Oe-gx8" secondAttribute="trailing" constant="134" id="o06-ht-dwO"/>
+                <constraint firstItem="uSN-25-2tz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="oq7-bd-bGM"/>
+                <constraint firstItem="u2P-hs-q37" firstAttribute="leading" secondItem="uSN-25-2tz" secondAttribute="trailing" constant="18" id="pX9-bB-PRB"/>
+                <constraint firstAttribute="bottom" secondItem="u2P-hs-q37" secondAttribute="bottom" constant="89" id="v87-lx-Nr5"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
                 <outlet property="desktopView" destination="vPT-rL-MLW" id="L1K-eS-bgz"/>
                 <outlet property="diceNo1View" destination="cT9-bd-4bU" id="gff-sp-Wma"/>
-                <outlet property="diceNo2View" destination="GmX-Xf-MBr" id="gxF-O6-gmd"/>
+                <outlet property="diceNo2View" destination="T8o-Oe-gx8" id="d4d-61-djl"/>
                 <outlet property="diceNo3View" destination="u2P-hs-q37" id="cJU-Zj-BSj"/>
                 <outlet property="diceNo4View" destination="uSN-25-2tz" id="L4G-Yb-y3w"/>
                 <outlet property="diceNo5View" destination="0r1-6V-MxA" id="Bjl-bk-UlK"/>
@@ -122,7 +94,7 @@
         <image name="desktop.png" width="320" height="219"/>
         <image name="desktop_bg.png" width="320" height="480"/>
         <image name="dice-1.png" width="52" height="59"/>
-        <image name="dicebox-22.png" width="258" height="345"/>
-        <image name="dicebox-back-22.png" width="258" height="184"/>
+        <image name="dicebox-22.png" width="320" height="480"/>
+        <image name="dicebox-back-22.png" width="320" height="250"/>
     </resources>
 </document>
