@@ -50,6 +50,13 @@
                     <rect key="frame" x="0.0" y="86" width="320" height="480"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQM-oT-Lj6">
+                    <rect key="frame" x="140" y="530" width="45" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="重新摇">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -60,6 +67,8 @@
                 <constraint firstAttribute="bottom" secondItem="cT9-bd-4bU" secondAttribute="bottom" constant="108" id="3yA-zk-sla"/>
                 <constraint firstAttribute="bottom" secondItem="0r1-6V-MxA" secondAttribute="bottom" constant="91" id="4dz-bf-GLV"/>
                 <constraint firstAttribute="trailing" secondItem="Ejk-Hu-wFH" secondAttribute="trailing" id="5hS-Sy-Eof"/>
+                <constraint firstAttribute="trailing" secondItem="BQM-oT-Lj6" secondAttribute="trailing" constant="135" id="5nL-VH-yjX"/>
+                <constraint firstItem="BQM-oT-Lj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="140" id="8aX-hg-xOw"/>
                 <constraint firstAttribute="bottom" secondItem="Ejk-Hu-wFH" secondAttribute="bottom" constant="2" id="8yg-Ds-JU8"/>
                 <constraint firstAttribute="bottom" secondItem="9ko-Hg-kPu" secondAttribute="bottom" constant="2" id="Hwz-B1-GBl"/>
                 <constraint firstItem="Ejk-Hu-wFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAf-Nq-EsG"/>
@@ -74,6 +83,7 @@
                 <constraint firstAttribute="trailing" secondItem="T8o-Oe-gx8" secondAttribute="trailing" constant="131" id="o06-ht-dwO"/>
                 <constraint firstItem="uSN-25-2tz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="116" id="oq7-bd-bGM"/>
                 <constraint firstItem="u2P-hs-q37" firstAttribute="leading" secondItem="uSN-25-2tz" secondAttribute="trailing" constant="16" id="pX9-bB-PRB"/>
+                <constraint firstAttribute="bottom" secondItem="BQM-oT-Lj6" secondAttribute="bottom" constant="8" id="uug-HX-10h"/>
                 <constraint firstAttribute="bottom" secondItem="u2P-hs-q37" secondAttribute="bottom" constant="110" id="v87-lx-Nr5"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
