@@ -18,6 +18,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-6r-r8h">
+                    <rect key="frame" x="12" y="20" width="42" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="Cd0-9b-Vds"/>
+                        <constraint firstAttribute="height" constant="39" id="Lsx-Ol-63X"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop.png" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-rL-MLW">
                     <rect key="frame" x="0.0" y="349" width="320" height="219"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,11 +59,19 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQM-oT-Lj6">
-                    <rect key="frame" x="140" y="530" width="45" height="30"/>
+                    <rect key="frame" x="110" y="527" width="111" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="重新摇">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="28f-61-STy"/>
+                        <constraint firstAttribute="height" constant="31" id="ENb-0i-I9b"/>
+                    </constraints>
+                    <state key="normal" title="摇!" backgroundImage="setting_btn_normal.png">
+                        <color key="titleColor" red="0.99215692281723022" green="0.75294125080108643" blue="0.3490196168422699" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="shake:" destination="-2" eventType="touchUpInside" id="KIa-3k-pgD"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -67,10 +83,11 @@
                 <constraint firstAttribute="bottom" secondItem="cT9-bd-4bU" secondAttribute="bottom" constant="108" id="3yA-zk-sla"/>
                 <constraint firstAttribute="bottom" secondItem="0r1-6V-MxA" secondAttribute="bottom" constant="91" id="4dz-bf-GLV"/>
                 <constraint firstAttribute="trailing" secondItem="Ejk-Hu-wFH" secondAttribute="trailing" id="5hS-Sy-Eof"/>
-                <constraint firstAttribute="trailing" secondItem="BQM-oT-Lj6" secondAttribute="trailing" constant="135" id="5nL-VH-yjX"/>
-                <constraint firstItem="BQM-oT-Lj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="140" id="8aX-hg-xOw"/>
+                <constraint firstAttribute="trailing" secondItem="BQM-oT-Lj6" secondAttribute="trailing" constant="99" id="5nL-VH-yjX"/>
+                <constraint firstItem="BQM-oT-Lj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="110" id="8aX-hg-xOw"/>
                 <constraint firstAttribute="bottom" secondItem="Ejk-Hu-wFH" secondAttribute="bottom" constant="2" id="8yg-Ds-JU8"/>
                 <constraint firstAttribute="bottom" secondItem="9ko-Hg-kPu" secondAttribute="bottom" constant="2" id="Hwz-B1-GBl"/>
+                <constraint firstItem="fhj-6r-r8h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="If2-3b-gbF"/>
                 <constraint firstItem="Ejk-Hu-wFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAf-Nq-EsG"/>
                 <constraint firstItem="vPT-rL-MLW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OKR-oA-SJ0"/>
                 <constraint firstAttribute="trailing" secondItem="u2P-hs-q37" secondAttribute="trailing" constant="84" id="PG8-Af-I3p"/>
@@ -79,11 +96,13 @@
                 <constraint firstAttribute="bottom" secondItem="vPT-rL-MLW" secondAttribute="bottom" id="Shm-4r-wRv"/>
                 <constraint firstAttribute="bottom" secondItem="T8o-Oe-gx8" secondAttribute="bottom" constant="110" id="Ztq-AH-cOf"/>
                 <constraint firstItem="cT9-bd-4bU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="92" id="cbt-hV-F5U"/>
+                <constraint firstAttribute="trailing" secondItem="fhj-6r-r8h" secondAttribute="trailing" constant="266" id="kbQ-oY-btN"/>
+                <constraint firstItem="fhj-6r-r8h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="n6y-nd-b0A"/>
                 <constraint firstItem="9ko-Hg-kPu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzX-h9-QeS"/>
                 <constraint firstAttribute="trailing" secondItem="T8o-Oe-gx8" secondAttribute="trailing" constant="131" id="o06-ht-dwO"/>
                 <constraint firstItem="uSN-25-2tz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="116" id="oq7-bd-bGM"/>
                 <constraint firstItem="u2P-hs-q37" firstAttribute="leading" secondItem="uSN-25-2tz" secondAttribute="trailing" constant="16" id="pX9-bB-PRB"/>
-                <constraint firstAttribute="bottom" secondItem="BQM-oT-Lj6" secondAttribute="bottom" constant="8" id="uug-HX-10h"/>
+                <constraint firstAttribute="bottom" secondItem="BQM-oT-Lj6" secondAttribute="bottom" constant="10" id="uug-HX-10h"/>
                 <constraint firstAttribute="bottom" secondItem="u2P-hs-q37" secondAttribute="bottom" constant="110" id="v87-lx-Nr5"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -106,5 +125,7 @@
         <image name="dice-1.png" width="52" height="59"/>
         <image name="dicebox-22.png" width="320" height="480"/>
         <image name="dicebox-back-22.png" width="320" height="250"/>
+        <image name="setting_btn_normal.png" width="185" height="53"/>
+        <image name="shake_image.png" width="123" height="115"/>
     </resources>
 </document>

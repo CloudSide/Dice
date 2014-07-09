@@ -24,5 +24,6 @@
 
 - (void)updateBox:(int)status;
 - (void)updateDice:(NSArray *)points;
+- (IBAction)shake:(id)sender;
 
 @end
