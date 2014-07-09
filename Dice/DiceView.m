@@ -10,13 +10,17 @@
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface DiceView () {
+@interface DiceView () <AVAudioPlayerDelegate> {
     
     int _flagY;
     BOOL _isShake;
+    BOOL _isShaked;
 }
 
+@property (nonatomic, strong) AVAudioPlayer *switchAudio;
+
 @end
+
 
 @implementation DiceView
 
@@ -36,14 +40,63 @@
 - (void)setIsShakeNo {
 
     _isShake = NO;
+    [_shakeButton setEnabled:YES];
+    
+    _isShaked = YES;
+    
+    [_shakeButton setTitle:@"开!" forState:UIControlStateNormal];
 }
 
+- (void)_autoOpen:(NSNumber *)flag {
+    
+    _flag = [flag intValue];
+    [self updateBox:0];
+}
+
+- (void)autoOpen {
+
+    for (int i=1; i<=22; i++) {
+        
+        [self performSelector:@selector(_autoOpen:) withObject:[NSNumber numberWithInt:i] afterDelay:i*0.02];
+    }
+}
+
+
 - (IBAction)shake:(id)sender {
+    
+    if (_isShaked) {
+    
+        [self autoOpen];
+        
+        [_shakeButton setTitle:@"摇!" forState:UIControlStateNormal];
+        _isShaked = NO;
+        
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"open" ofType:@"aiff"];
+        NSError *error = nil;
+        self.switchAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
+        _switchAudio.delegate = self;
+        [_switchAudio setVolume:1.0f];
+        [_switchAudio prepareToPlay];
+        [_switchAudio play];
+        
+        return;
+    }
+    
+    
+    if (_isShake) {
+        
+        return;
+    }
+    
+    //[self autoClose];
     
     _flag = 0;
     [self updateBox:0];
     
     _isShake = YES;
+    [_shakeButton setEnabled:NO];
     
     CABasicAnimation *shake = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     shake.fromValue = [NSNumber numberWithFloat:-M_PI/32];
@@ -70,14 +123,20 @@
     
     [self performSelector:@selector(setIsShakeNo) withObject:nil afterDelay:2.5];
     
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"rolling" ofType:@"aiff"];
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"rolling" ofType:@"mp3"];
     NSError *error = nil;
-    AVAudioPlayer *switchAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
+    self.switchAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
+    _switchAudio.delegate = self;
+    [_switchAudio setVolume:1.0f];
+    [_switchAudio prepareToPlay];
+    [_switchAudio play];
     
-    NSLog(@"%@", error);
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)audio successfully:(BOOL)sflag {
     
-    [switchAudio play];
     
 }
 
@@ -106,6 +165,12 @@
 			
 			_flag = 22;
 		}
+        
+        if (_flag >= 8) {
+    
+            [_shakeButton setTitle:@"摇!" forState:UIControlStateNormal];
+            _isShaked = NO;
+        }
 		
 	}
 	

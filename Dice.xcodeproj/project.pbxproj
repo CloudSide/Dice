@@ -22,6 +22,9 @@
 		320233A119644B5B00055F63 /* DiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3202339F19644B5B00055F63 /* DiceViewController.m */; };
 		320233A219644B5B00055F63 /* DiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320233A019644B5B00055F63 /* DiceViewController.xib */; };
 		320233A519644B9700055F63 /* DiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 320233A419644B9700055F63 /* DiceView.m */; };
+		328AF3F0196D8718003C08F2 /* rolling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 328AF3EF196D8718003C08F2 /* rolling.mp3 */; };
+		328AF3F2196D885D003C08F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328AF3F1196D885D003C08F2 /* AVFoundation.framework */; };
+		328AF3F4196D8E9C003C08F2 /* open.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 328AF3F3196D8E9C003C08F2 /* open.aiff */; };
 		32F29D0619692724009D510E /* desktop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F29D0319692724009D510E /* desktop@2x.png */; };
 		32F29D0719692724009D510E /* desktop_bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F29D0419692724009D510E /* desktop_bg-568h@2x.png */; };
 		32F29D0819692724009D510E /* desktop_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F29D0519692724009D510E /* desktop_bg@2x.png */; };
@@ -62,7 +65,6 @@
 		32F29D4F19692CB9009D510E /* dice-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F29D4919692CB9009D510E /* dice-5@2x.png */; };
 		32F29D5019692CB9009D510E /* dice-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F29D4A19692CB9009D510E /* dice-6@2x.png */; };
 		3FAFF72A196D4046000B1938 /* OpenButton_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFF724196D4046000B1938 /* OpenButton_normal@2x.png */; };
-		3FAFF72B196D4046000B1938 /* rolling.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFF725196D4046000B1938 /* rolling.aiff */; };
 		3FAFF72C196D4046000B1938 /* setting_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFF726196D4046000B1938 /* setting_btn_normal@2x.png */; };
 		3FAFF72D196D4046000B1938 /* shake_chinese@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFF727196D4046000B1938 /* shake_chinese@2x.png */; };
 		3FAFF72E196D4046000B1938 /* shake_english@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAFF728196D4046000B1938 /* shake_english@2x.png */; };
@@ -101,6 +103,9 @@
 		320233A019644B5B00055F63 /* DiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiceViewController.xib; sourceTree = "<group>"; };
 		320233A319644B9700055F63 /* DiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceView.h; sourceTree = "<group>"; };
 		320233A419644B9700055F63 /* DiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceView.m; sourceTree = "<group>"; };
+		328AF3EF196D8718003C08F2 /* rolling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rolling.mp3; sourceTree = "<group>"; };
+		328AF3F1196D885D003C08F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		328AF3F3196D8E9C003C08F2 /* open.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = open.aiff; sourceTree = "<group>"; };
 		32F29D0319692724009D510E /* desktop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desktop@2x.png"; sourceTree = "<group>"; };
 		32F29D0419692724009D510E /* desktop_bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desktop_bg-568h@2x.png"; sourceTree = "<group>"; };
 		32F29D0519692724009D510E /* desktop_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desktop_bg@2x.png"; sourceTree = "<group>"; };
@@ -141,7 +146,6 @@
 		32F29D4919692CB9009D510E /* dice-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dice-5@2x.png"; sourceTree = "<group>"; };
 		32F29D4A19692CB9009D510E /* dice-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dice-6@2x.png"; sourceTree = "<group>"; };
 		3FAFF724196D4046000B1938 /* OpenButton_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OpenButton_normal@2x.png"; sourceTree = "<group>"; };
-		3FAFF725196D4046000B1938 /* rolling.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = rolling.aiff; sourceTree = "<group>"; };
 		3FAFF726196D4046000B1938 /* setting_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_btn_normal@2x.png"; sourceTree = "<group>"; };
 		3FAFF727196D4046000B1938 /* shake_chinese@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shake_chinese@2x.png"; sourceTree = "<group>"; };
 		3FAFF728196D4046000B1938 /* shake_english@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shake_english@2x.png"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328AF3F2196D885D003C08F2 /* AVFoundation.framework in Frameworks */,
 				32023372196449BC00055F63 /* CoreGraphics.framework in Frameworks */,
 				32023374196449BD00055F63 /* UIKit.framework in Frameworks */,
 				32023370196449BC00055F63 /* Foundation.framework in Frameworks */,
@@ -194,6 +199,7 @@
 		3202336E196449BC00055F63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				328AF3F1196D885D003C08F2 /* AVFoundation.framework */,
 				3202336F196449BC00055F63 /* Foundation.framework */,
 				32023371196449BC00055F63 /* CoreGraphics.framework */,
 				32023373196449BD00055F63 /* UIKit.framework */,
@@ -259,8 +265,9 @@
 		32F29D0219692724009D510E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				328AF3F3196D8E9C003C08F2 /* open.aiff */,
+				328AF3EF196D8718003C08F2 /* rolling.mp3 */,
 				3FAFF724196D4046000B1938 /* OpenButton_normal@2x.png */,
-				3FAFF725196D4046000B1938 /* rolling.aiff */,
 				3FAFF726196D4046000B1938 /* setting_btn_normal@2x.png */,
 				3FAFF727196D4046000B1938 /* shake_chinese@2x.png */,
 				3FAFF728196D4046000B1938 /* shake_english@2x.png */,
@@ -387,7 +394,6 @@
 				32F29D3C19692C2E009D510E /* dicebox-22@2x.png in Resources */,
 				3FAFF72E196D4046000B1938 /* shake_english@2x.png in Resources */,
 				32F29D0819692724009D510E /* desktop_bg@2x.png in Resources */,
-				3FAFF72B196D4046000B1938 /* rolling.aiff in Resources */,
 				320233A219644B5B00055F63 /* DiceViewController.xib in Resources */,
 				3FAFF72C196D4046000B1938 /* setting_btn_normal@2x.png in Resources */,
 				32F29D3319692C2E009D510E /* dicebox-13@2x.png in Resources */,
@@ -416,6 +422,8 @@
 				32F29D3719692C2E009D510E /* dicebox-17@2x.png in Resources */,
 				32F29D3119692C2E009D510E /* dicebox-11@2x.png in Resources */,
 				32F29D5019692CB9009D510E /* dice-6@2x.png in Resources */,
+				328AF3F4196D8E9C003C08F2 /* open.aiff in Resources */,
+				328AF3F0196D8718003C08F2 /* rolling.mp3 in Resources */,
 				32F29D3519692C2E009D510E /* dicebox-15@2x.png in Resources */,
 				32F29D4B19692CB9009D510E /* dice-1@2x.png in Resources */,
 				32F29D2B19692C2E009D510E /* dicebox-5@2x.png in Resources */,

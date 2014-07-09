@@ -18,6 +18,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *diceboxView;
 @property (nonatomic, strong) IBOutlet UIImageView *diceboxBottomView;
 @property (nonatomic, strong) IBOutlet UIImageView *desktopView;
+@property (nonatomic, strong) IBOutlet UIButton *shakeButton;
 
 @property (nonatomic, assign) int flag;
 

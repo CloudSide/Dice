@@ -18,8 +18,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_chinese.png" translatesAutoresizingMaskIntoConstraints="NO" id="aRH-Cr-gGq">
+                    <rect key="frame" x="20" y="55" width="92" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rDy-sE-5HT"/>
+                        <constraint firstAttribute="width" constant="92" id="vnF-uF-B40"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-6r-r8h">
-                    <rect key="frame" x="12" y="20" width="42" height="39"/>
+                    <rect key="frame" x="20" y="20" width="42" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="Cd0-9b-Vds"/>
@@ -84,24 +92,27 @@
                 <constraint firstAttribute="bottom" secondItem="0r1-6V-MxA" secondAttribute="bottom" constant="91" id="4dz-bf-GLV"/>
                 <constraint firstAttribute="trailing" secondItem="Ejk-Hu-wFH" secondAttribute="trailing" id="5hS-Sy-Eof"/>
                 <constraint firstAttribute="trailing" secondItem="BQM-oT-Lj6" secondAttribute="trailing" constant="99" id="5nL-VH-yjX"/>
+                <constraint firstItem="aRH-Cr-gGq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="7N0-8m-XI9"/>
                 <constraint firstItem="BQM-oT-Lj6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="110" id="8aX-hg-xOw"/>
                 <constraint firstAttribute="bottom" secondItem="Ejk-Hu-wFH" secondAttribute="bottom" constant="2" id="8yg-Ds-JU8"/>
                 <constraint firstAttribute="bottom" secondItem="9ko-Hg-kPu" secondAttribute="bottom" constant="2" id="Hwz-B1-GBl"/>
-                <constraint firstItem="fhj-6r-r8h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="If2-3b-gbF"/>
+                <constraint firstItem="fhj-6r-r8h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="If2-3b-gbF"/>
                 <constraint firstItem="Ejk-Hu-wFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAf-Nq-EsG"/>
                 <constraint firstItem="vPT-rL-MLW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OKR-oA-SJ0"/>
                 <constraint firstAttribute="trailing" secondItem="u2P-hs-q37" secondAttribute="trailing" constant="84" id="PG8-Af-I3p"/>
                 <constraint firstAttribute="trailing" secondItem="vPT-rL-MLW" secondAttribute="trailing" id="Ra5-vt-uve"/>
                 <constraint firstItem="0r1-6V-MxA" firstAttribute="leading" secondItem="cT9-bd-4bU" secondAttribute="trailing" constant="17" id="SIT-k9-eGF"/>
                 <constraint firstAttribute="bottom" secondItem="vPT-rL-MLW" secondAttribute="bottom" id="Shm-4r-wRv"/>
+                <constraint firstAttribute="trailing" secondItem="aRH-Cr-gGq" secondAttribute="trailing" constant="208" id="Xg3-Fs-m1K"/>
                 <constraint firstAttribute="bottom" secondItem="T8o-Oe-gx8" secondAttribute="bottom" constant="110" id="Ztq-AH-cOf"/>
                 <constraint firstItem="cT9-bd-4bU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="92" id="cbt-hV-F5U"/>
-                <constraint firstAttribute="trailing" secondItem="fhj-6r-r8h" secondAttribute="trailing" constant="266" id="kbQ-oY-btN"/>
+                <constraint firstAttribute="trailing" secondItem="fhj-6r-r8h" secondAttribute="trailing" constant="258" id="kbQ-oY-btN"/>
                 <constraint firstItem="fhj-6r-r8h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="n6y-nd-b0A"/>
                 <constraint firstItem="9ko-Hg-kPu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzX-h9-QeS"/>
                 <constraint firstAttribute="trailing" secondItem="T8o-Oe-gx8" secondAttribute="trailing" constant="131" id="o06-ht-dwO"/>
                 <constraint firstItem="uSN-25-2tz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="116" id="oq7-bd-bGM"/>
                 <constraint firstItem="u2P-hs-q37" firstAttribute="leading" secondItem="uSN-25-2tz" secondAttribute="trailing" constant="16" id="pX9-bB-PRB"/>
+                <constraint firstItem="aRH-Cr-gGq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="qbg-UZ-pP0"/>
                 <constraint firstAttribute="bottom" secondItem="BQM-oT-Lj6" secondAttribute="bottom" constant="10" id="uug-HX-10h"/>
                 <constraint firstAttribute="bottom" secondItem="u2P-hs-q37" secondAttribute="bottom" constant="110" id="v87-lx-Nr5"/>
             </constraints>
@@ -116,6 +127,7 @@
                 <outlet property="diceNo5View" destination="0r1-6V-MxA" id="Bjl-bk-UlK"/>
                 <outlet property="diceboxBottomView" destination="Ejk-Hu-wFH" id="dIS-6w-bUO"/>
                 <outlet property="diceboxView" destination="9ko-Hg-kPu" id="oiL-Sh-78z"/>
+                <outlet property="shakeButton" destination="BQM-oT-Lj6" id="IRA-l8-AK6"/>
             </connections>
         </view>
     </objects>
@@ -126,6 +138,7 @@
         <image name="dicebox-22.png" width="320" height="480"/>
         <image name="dicebox-back-22.png" width="320" height="250"/>
         <image name="setting_btn_normal.png" width="185" height="53"/>
+        <image name="shake_chinese.png" width="208" height="100"/>
         <image name="shake_image.png" width="123" height="115"/>
     </resources>
 </document>
