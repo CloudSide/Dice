@@ -133,6 +133,17 @@
     [_switchAudio prepareToPlay];
     [_switchAudio play];
     
+    
+    NSMutableArray *points = [NSMutableArray array];
+    
+    for (int i=0; i<6; i++) {
+        
+        int p = (arc4random() % 6) + 1;
+        [points addObject:[NSNumber numberWithInt:p]];
+    }
+    
+    [self updateDice:points];
+    
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)audio successfully:(BOOL)sflag {

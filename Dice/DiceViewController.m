@@ -31,8 +31,17 @@
     
     [(DiceView *)[self view] setFlag:0];
     [(DiceView *)[self view] updateBox:0];
-    [(DiceView *)[self view] updateDice:@[
-        @1, @2, @3, @4, @5]];
+    
+    
+    NSMutableArray *points = [NSMutableArray array];
+    
+    for (int i=0; i<6; i++) {
+        
+        int p = (arc4random() % 6) + 1;
+        [points addObject:[NSNumber numberWithInt:p]];
+    }
+    
+    [(DiceView *)[self view] updateDice:points];
     
     
     CGRect desktopFrame = [(DiceView *)[self view] desktopView].frame;
